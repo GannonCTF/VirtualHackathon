@@ -22,7 +22,8 @@ dom.watch()
 })
 export class ScoreBoardComponent implements OnInit {
 
-  public difficulties = [1,2,3,4,5,6]
+  //public difficulties = [1,2,3,4,5,6]
+  public difficulties = [1]
   public scoreBoardTablesExpanded
   public showSolvedChallenges
   public allChallengeCategories = []
