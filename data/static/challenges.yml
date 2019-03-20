@@ -82,7 +82,8 @@
   name: 'Redirects Tier 1'
   category: 'Forgotten Content'
   description: 'Let us redirect you to a donation site that went out of business.'
-  difficulty: 1
+  # difficulty: 1
+  difficulty: 2
   hint: 'We might have failed to take this out of our code properly.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#let-us-redirect-you-to-a-donation-site-that-went-out-of-business'
   key: redirectGratipayChallenge
@@ -122,7 +123,8 @@
   name: 'Confidential Document'
   category: 'Sensitive Data Exposure'
   description: 'Access a confidential document.'
-  difficulty: 1
+  # difficulty: 1
+  difficulty: 2
   hint: 'Analyze and tamper with links in the application that deliver a file directly.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#access-a-confidential-document'
   key: directoryListingChallenge
@@ -242,7 +244,8 @@
   name: 'Zero Stars'
   category: 'Improper Input Validation'
   description: 'Give a devastating zero-star feedback to the store.'
-  difficulty: 1
+  # difficulty: 1
+  difficulty: 2
   hint: 'Before you invest time bypassing the API, you might want to play around with the UI a bit.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#give-a-devastating-zero-star-feedback-to-the-store'
   key: zeroStarsChallenge
@@ -505,7 +508,8 @@
   name: 'XSS Tier 0'
   category: 'XSS'
   description: 'Perform a <i>reflected</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
-  difficulty: 1
+  # difficulty: 1
+  difficulty: 2
   hint: 'Look for an input field where its content appears in the response HTML when its form is submitted.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
   key: reflectedXssChallenge
@@ -513,7 +517,8 @@
   name: 'XSS Tier 1'
   category: 'XSS'
   description: 'Perform a <i>DOM</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
-  difficulty: 1
+  # difficulty: 1
+  difficulty: 2
   hint: 'Look for an input field where its content appears in the HTML when its form is submitted.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
   key: localXssChallenge
