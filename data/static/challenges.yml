@@ -114,7 +114,7 @@
   name: 'Payback Time'
   category: 'Improper Input Validation'
   description: 'Place an order that makes you rich.'
-  difficulty: 3
+  difficulty: 1
   hint: 'You literally need to make the shop owe you any amount of money.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#place-an-order-that-makes-you-rich'
   key: negativeOrderChallenge
