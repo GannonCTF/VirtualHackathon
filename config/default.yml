@@ -3,7 +3,7 @@ server:
 application:
   domain: juice-sh.op
   name: 'GU Shop'
-  logo: gannonKnight.svg
+  logo: Gannon-Knight.png
   favicon: favicon_js.ico
   numberOfRandomFakeUsers: 0
   showChallengeSolvedNotifications: true
