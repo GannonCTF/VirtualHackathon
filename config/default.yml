@@ -43,65 +43,65 @@ products:
     name: 'Apple Juice (1000ml)'
     price: 1.99
     description: 'The all-time classic.'
-    image: apple_juice.jpg
+    image: tumbler.png
     reviews: # Options 'author': admin, jim, bender, ciso, support, morty, mc.safesearch
       - { text: 'One of my favorites!', author: admin }
   -
     name: 'Orange Juice (1000ml)'
     description: 'Made from oranges hand-picked by Uncle Dittmeyer.'
     price: 2.99
-    image: orange_juice.jpg
+    image: kidsTshirt.png
   -
     name: 'Eggfruit Juice (500ml)'
     description: 'Now with even more exotic flavour.'
     price: 8.99
-    image: eggfruit_juice.jpg
+    image: scrunchie.png
     reviews:
       - { text: 'I bought it, would buy again. 5/7', author: admin }
   -
     name: 'Raspberry Juice (1000ml)'
     description: 'Made from blended Raspberry Pi, water and sugar.'
     price: 4.99
-    image: raspberry_juice.jpg
+    image: poncho.png
   -
     name: 'Lemon Juice (500ml)'
     description: 'Sour but full of vitamins.'
     price: 2.99
-    image: lemon_juice.jpg
+    image: GUBeanie.png
   -
     name: 'Banana Juice (1000ml)'
     description: 'Monkeys love it the most.'
     price: 1.99
-    image: banana_juice.jpg
+    image: GUCap.png
     reviews:
       - { text: 'Fry liked it too.', author: bender }
   -
     name: 'OWASP Juice Shop T-Shirt'
     description: 'Real fans wear it 24/7!'
     price: 22.49
-    image: fan_shirt.jpg
+    image: GUWomanZipTop.png
   -
     name: 'OWASP Juice Shop CTF Girlie-Shirt'
     description: 'For serious Capture-the-Flag heroines only!'
     price: 22.49
-    image: fan_girlie.jpg
+    image: GUWomenScarf.png
   -
     name: 'OWASP SSL Advanced Forensic Tool (O-Saft)'
     description: 'O-Saft is an easy to use tool to show information about SSL certificate and tests the SSL connection according given list of ciphers and various SSL configurations.'
     price: 0.01
-    image: orange_juice.jpg
+    image: GUMenScarf.png
     urlForProductTamperingChallenge: 'https://www.owasp.org/index.php/O-Saft'
   -
     name: 'Christmas Super-Surprise-Box (2014 Edition)'
     description: 'Contains a random selection of 10 bottles (each 500ml) of our tastiest juices and an extra fan shirt for an unbeatable price!'
     price: 29.99
-    image: undefined.jpg
+    image: GUbear.jpeg
     useForChristmasSpecialChallenge: true
   -
     name: 'Rippertuer Special Juice'
     description: 'Contains a magical collection of the rarest fruits gathered from all around the world, like Cherymoya Annona cherimola, Jabuticaba Myrciaria cauliflora, Bael Aegle marmelos... and others, at an unbelievable price! <br/><span style="color:red;">This item has been made unavailable because of lack of safety standards.</span>'
     price: 16.99
-    image: undefined.jpg
+    image: GUMenZipJacket.png
     keywordsForPastebinDataLeakChallenge:
       - hueteroneel
       - eurogium edule
@@ -109,7 +109,7 @@ products:
     name: 'OWASP Juice Shop Sticker (2015/2016 design)'
     description: 'Die-cut sticker with the official 2015/2016 logo. By now this is a rare collectors item. <em>Out of stock!</em>'
     price: 999.99
-    image: sticker.png
+    image: GUWallet.jpeg
     deletedDate: '2017-04-28'
   -
     name: 'OWASP Juice Shop Iron-Ons (16pcs)'
