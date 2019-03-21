@@ -40,6 +40,11 @@ const themes = {
     bgColor: '#FAFAFA',
     textColor: '#000000',
     navColor: '#E64A19'
+  },
+  'red-grey': {
+    bgColor: '#303030',
+    textColor: '#FFFFFF',
+    navColor: '#546E7A'
   }
 }
 
