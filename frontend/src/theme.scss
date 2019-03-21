@@ -31,5 +31,5 @@ $deeporange-indigo-accent:  mat-palette($mat-indigo, A200, A100, A400);
 $deeporange-indigo-theme: mat-light-theme($deeporange-indigo-primary, $deeporange-indigo-accent);
 
 $red-grey-primary: mat-palette($mat-red, 800, 800, 800);
-$red-grey-accent:  mat-palette($mat-grey, 900, 700, 700);
+$red-grey-accent:  mat-palette($mat-green, 500, 500, 500);
 $red-grey-theme: mat-dark-theme($red-grey-primary, $red-grey-accent);
