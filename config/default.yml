@@ -110,6 +110,7 @@ products:
     description: 'This GU wallet reminds you of your school spirit everytime you pay for things'
     price: $99.99
     image: GUWallet.jpeg # Exif metadata contains "OpenSCAD" as subtle hint...
+    reviews:
     -  { text: 'Just as good as the one out of the replicator', author: jim }
     fileForRetrieveBlueprintChallenge: JuiceShop.stl # ...to blueprint file type
   
