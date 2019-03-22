@@ -1,12 +1,12 @@
 <diV fxLayout="column">
-  <mat-card>
+  <!--<mat-card>
 
     <mat-card-title>{{"TITLE_SCORE_BOARD" | translate}}
       <small class="confirmation">{{percentChallengesSolved}}%</small>
     </mat-card-title>
-    <mat-progress-bar mode="determinate" [color]="'accent'" [value]="percentChallengesSolved"></mat-progress-bar>
+    <<mat-progress-bar mode="determinate" [color]="'accent'" [value]="percentChallengesSolved"></mat-progress-bar>
 
-  </mat-card>
+  </mat-card>-->
 
   <!--<mat-card>
 
@@ -56,11 +56,14 @@
                        [disabled]="true">
 
     <mat-expansion-panel-header>
-      <span fxLayout="row">
+      <!--<span fxLayout="row">
         <bar-rating [rate]="difficulty" [max]="difficulty" readOnly="true"></bar-rating>
         <span
           style="margin: 15px 0;">{{"LABEL_" + difficulty + "_STAR_DIFFICULTY" | translate}} {{"LABEL_CHALLENGES" | translate}}</span>
-      </span>
+      </span>-->
+      <mat-panel-title>
+        Challenges
+      </mat-panel-title>
     </mat-expansion-panel-header>
 
     <mat-divider></mat-divider>
