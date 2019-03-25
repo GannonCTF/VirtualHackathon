@@ -6,14 +6,14 @@
   hint: 'Try to find a reference or clue behind the scenes. Or simply guess what URL the Score Board might have.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/score-board.html#find-the-carefully-hidden-score-board-page'
   key: scoreBoardChallenge
--
-  name: 'Email Leak'
-  category: 'Sensitive Data Exposure'
-  description: 'Perform an unwanted information disclosure by accessing data cross-domain.'
-  difficulty: 5
-  hint: 'Try to find and attack an endpoint that responds with user information. SQL Injection is not the solution here.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#perform-an-unwanted-information-disclosure-by-accessing-data-cross-domain'
-  key: emailLeakChallenge
+# -
+#   name: 'Email Leak'
+#   category: 'Sensitive Data Exposure'
+#   description: 'Perform an unwanted information disclosure by accessing data cross-domain.'
+#   difficulty: 5
+#   hint: 'Try to find and attack an endpoint that responds with user information. SQL Injection is not the solution here.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#perform-an-unwanted-information-disclosure-by-accessing-data-cross-domain'
+#   key: emailLeakChallenge
 -
   name: 'Error Handling'
   category: 'Security Misconfiguration'
