@@ -41,7 +41,7 @@ challenges:
 products:
   -
     name: 'LXG GU 24 oz. Tumbler with Straw'
-    price: $16.00
+    price: 16.00
     description: 'Take your favorite drink with you in this acrylic tumbler with straw.'
     image: tumbler.png
     reviews: # Options 'author': admin, jim, bender, ciso, support, morty, mc.safesearch
@@ -49,58 +49,58 @@ products:
   -
     name:  'GU Toddler Short Sleeve T-Shirt'
     description: 'Running around, hes college bound in this spirited toddler campus t-shirt.'
-    price: $16.00
+    price: 16.00
     image: kidsTshirt.png
   -
     name: 'GU Womens Spirit Scrunchie'
     description: 'Hair it is, an easy way to share school pride with this womens Spirit Scrunchie.'
-    price: $6.95
+    price: 6.95
     image: scrunchie.png
     reviews:
       - { text: 'I bought it, would buy again. 5/7', author: admin }
   -
     name: 'Storm Duds GU Rain Poncho'
     description: 'Dont let drizzle fizzle your plans! Just throw on this protective campus rain poncho and keep dry.'
-    price: $4.95
+    price: 4.95
     image: poncho.png
     urlForProductTamperingChallenge: 'https://www.bkstr.com/gannonstore/home'
   -
     name: 'LogoFit GU Everest Beanie'
     description: 'Acrylic knit stretch fit beanie. Embroidered school logo on the front.'
-    price: $14.00
+    price: 14.00
     image: GUBeanie.png
   -
     name: '47 Brand GU Cap'
     description: 'Embroidered front and back.'
-    price: $30.00
+    price: 30.00
     image: GUCap.png
     reviews:
       -  { text: 'Super stylish with my StarFleet uniform!', author: jim }
   -
     name: 'League GU Womens 1/2 Zip Top'
     description: 'Show your campus style in this womens Victory Springs 1/2 zip top. Cute and comfy. GU logo printed on the upper left, and GU name screen-printed on the back for a major dose of school spirit.'
-    price: $58.00
+    price: 58.00
     image: GUWomanZipTop.png
   -
     name: 'LogoFit Gannon University Golden Knights Womens Scarf'
     description: 'This womens Piper Infinity scarf is the perfect winter accessory! This acrylic knit, chunky scarf has just the right amount of stretch. Scarf features the school logo embroidered on the side for the perfect touch of school spirit.'
-    price: $22.49
+    price: 22.49
     image: GUWomenScarf.png
   -
     name: 'LogoFit Gannon University Golden Knights Rugby Scarf'
     description: 'Rugby striped scarf with embroidered school mascot.'
-    price: $24.00
+    price: 24.00
     image: GUMenScarf.png
   -
     name: 'Christmas Special 2014'
     description: 'This GU bear is only offered for christmas 2014. '
-    price: $99.00
+    price: 99.00
     image: GUbear.jpeg
     useForChristmasSpecialChallenge: true
   -
     name: 'Champion Gannon University Full-Zip Jacket'
     description: 'This hooded, full zip campus jacket provides lightweight protection from the wind and rain. Grab this jacket and get out and enjoy the day with the school logo printed on the upper left.'
-    price: $46.00
+    price: 46.00
     image: GUMenZipJacket.png
     keywordsForPastebinDataLeakChallenge:
       - hueteroneel
@@ -108,7 +108,7 @@ products:
   -
     name: 'GU Wallet (3D-printed)'
     description: 'This GU wallet reminds you of your school spirit everytime you pay for things'
-    price: $99.99
+    price: 99.99
     image: GUWallet.jpeg # Exif metadata contains "OpenSCAD" as subtle hint...
     reviews:
     -  { text: 'Just as good as the one out of the replicator', author: jim }
