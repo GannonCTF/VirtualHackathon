@@ -163,11 +163,11 @@ export class ScoreBoardComponent implements OnInit {
     }
   }
 
-  openHint (challenge) {
+  /*openHint (challenge) {
     if (this.showChallengeHints && challenge.hintUrl) {
       this.windowRefService.nativeWindow.open(challenge.hintUrl, '_blank')
     }
-  }
+  }*/
 
   filterToDataSource (challenges) {
     if (!challenges) {
