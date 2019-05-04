@@ -18,7 +18,8 @@
   name: 'Error Handling'
   category: 'Security Misconfiguration'
   description: 'Provoke an error that is not very gracefully handled.'
-  difficulty: 1
+  difficulty: 2
+  #difficulty: 1
   hint: 'Try to submit bad input to forms. Alternatively tamper with URL paths or parameters.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-misconfiguration.html#provoke-an-error-that-is-not-very-gracefully-handled'
   key: errorHandlingChallenge
@@ -34,6 +35,7 @@
   name: 'Login Admin'
   category: 'Injection'
   description: 'Log in with the administrator''s user account.'
+  #difficulty: 2
   difficulty: 1
   hint: 'Try different SQL Injection attack patterns depending whether you know the admin''s email address or not.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-the-administrators-user-account'
@@ -74,7 +76,8 @@
   name: 'Forged Feedback'
   category: 'Broken Access Control'
   description: 'Post some feedback in another users name.'
-  difficulty: 3
+  difficulty: 1
+  # difficulty: 3
   hint: 'You can solve this by tampering with the user interface or by intercepting the communication with the RESTful backend.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#post-some-feedback-in-another-users-name'
   key: forgedFeedbackChallenge
@@ -115,7 +118,8 @@
   name: 'Payback Time'
   category: 'Improper Input Validation'
   description: 'Place an order that makes you rich.'
-  difficulty: 1
+  #difficulty: 1
+  difficulty: 2
   hint: 'You literally need to make the shop owe you any amount of money.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#place-an-order-that-makes-you-rich'
   key: negativeOrderChallenge
@@ -301,8 +305,8 @@
   name: 'Reset Jim''s Password'
   category: 'Broken Authentication'
   description: 'Reset Jim''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
-  # difficulty: 3
-  difficulty: 1
+  difficulty: 3
+  #difficulty: 1
   hint: 'It''s hard for celebrities to pick a security question from a hard-coded list where the answer is not publicly exposed.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-jims-password-via-the-forgot-password-mechanism'
   key: resetPasswordJimChallenge
@@ -310,7 +314,8 @@
   name: 'Reset Bender''s Password'
   category: 'Broken Authentication'
   description: 'Reset Bender''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
-  difficulty: 4
+  difficulty: 1
+  #difficulty: 4
   hint: 'Not as trivial as Jim''s but still not too difficult with some "Futurama" background knowledge.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-benders-password-via-the-forgot-password-mechanism'
   key: resetPasswordBenderChallenge
@@ -484,7 +489,8 @@
   name: 'Christmas Special'
   category: 'Injection'
   description: 'Order the Christmas special offer of 2014.'
-  difficulty: 4
+  difficulty: 1
+  #difficulty: 4
   hint: 'Find out how the application handles unavailable products and try to find a loophole.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#order-the-christmas-special-offer-of-2014'
   key: christmasSpecialChallenge
@@ -492,7 +498,8 @@
   name: 'User Credentials'
   category: 'Injection'
   description: 'Retrieve a list of all user credentials via SQL Injection'
-  difficulty: 4
+  difficulty: 1
+  #difficulty: 4
   hint: 'Craft a UNION SELECT attack string against an endpoint that offers an unnecessary way to filter data.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#retrieve-a-list-of-all-user-credentials-via-sql-injection'
   key: unionSqlInjectionChallenge
@@ -500,7 +507,8 @@
   name: 'Admin Registration'
   category: 'Improper Input Validation'
   description: 'Get registered as admin user.'
-  difficulty: 3
+  difficulty: 1
+  #difficulty: 3
   hint: 'Assign the unassignable.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#get-registered-as-admin-user'
   key: registerAdminChallenge
@@ -508,8 +516,8 @@
   name: 'XSS Tier 0'
   category: 'XSS'
   description: 'Perform a <i>reflected</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
-  difficulty: 1
-  #difficulty: 2
+  #difficulty: 1
+  difficulty: 2
   hint: 'Look for an input field where its content appears in the response HTML when its form is submitted.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
   key: reflectedXssChallenge
@@ -535,7 +543,8 @@
   name: 'XSS Tier 3'
   category: 'XSS'
   description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> without using the frontend application at all.'
-  difficulty: 3
+  difficulty: 1
+  #difficulty: 3
   hint: 'You need to work with the server-side API directly. Try different HTTP verbs on different entities exposed through the API.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-without-using-the-frontend-application-at-all'
   key: restfulXssChallenge
@@ -543,7 +552,8 @@
   name: 'XSS Tier 4'
   category: 'XSS'
   description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> bypassing a <i>server-side</i> security mechanism.'
-  difficulty: 4
+  difficulty: 1
+  #difficulty: 4
   hint: 'The "Comment" field in the "Contact Us" screen is where you want to put your focus on.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-bypassing-a-server-side-security-mechanism'
   key: persistedXssChallengeFeedback
