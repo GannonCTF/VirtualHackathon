@@ -96,9 +96,11 @@ export class ScoreBoardComponent implements OnInit {
       challenge.hint = 'This challenge is unavailable in a ' + challenge.disabledEnv + ' environment!'
     } else if (challenge.hintUrl) {
       if (challenge.hint) {
-        challenge.hint += ' Click for more hints.'
+        //challenge.hint += ' Click for more hints.'
+        challenge.hint += ''
       } else {
-        challenge.hint = 'Click to open hints.'
+        //challenge.hint = 'Click to open hints.'
+        challenge.hint = ''
       }
     }
   }
