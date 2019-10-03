@@ -23,64 +23,65 @@
 #  hint: 'Try to submit bad input to forms. Alternatively tamper with URL paths or parameters.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-misconfiguration.html#provoke-an-error-that-is-not-very-gracefully-handled'
 #  key: errorHandlingChallenge
--
-  name: 'Forged Review'
-  category: 'Broken Access Control'
-  description: 'Post a product review as another user or edit any user''s existing review.'
-  difficulty: 3
-  hint: 'Observe the flow of product review posting and editing and see if you can exploit it.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#post-a-product-review-as-another-user-or-edit-any-users-existing-review'
-  key: forgedReviewChallenge
--
-  name: 'Login Admin'
-  category: 'Injection'
-  description: 'Log in with the administrator''s user account.'
-  difficulty: 2
+# -
+#  name: 'Forged Review'
+#  category: 'Broken Access Control'
+#  description: 'Post a product review as another user or edit any user''s existing review.'
+#  difficulty: 3
+#  hint: 'Observe the flow of product review posting and editing and see if you can exploit it.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#post-a-product-review-as-another-user-or-edit-any-users-existing-review'
+#  key: forgedReviewChallenge
+#-
+#  name: 'Login Admin'
+#  category: 'Injection'
+#  description: 'Log in with the administrator''s user account.'
+#  difficulty: 2
   #difficulty: 1
-  hint: 'Try different SQL Injection attack patterns depending whether you know the admin''s email address or not.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-the-administrators-user-account'
-  key: loginAdminChallenge
+#  hint: 'Try different SQL Injection attack patterns depending whether you know the admin''s email address or not.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-the-administrators-user-account'
+#  key: loginAdminChallenge
 -
   name: 'Login Jim'
   category: 'Injection'
   description: 'Log in with Jim''s user account.'
-  difficulty: 3
+  difficulty: 1
+  #difficulty: 3
   hint: 'Try cracking Jim''s password hash if you harvested it already. Alternatively, if you know Jim''s email address, try SQL Injection.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-jims-user-account'
   key: loginJimChallenge
--
-  name: 'Login Bender'
-  category: 'Injection'
-  description: 'Log in with Bender''s user account.'
-  difficulty: 3
-  hint: 'If you know Bender''s email address, try SQL Injection. Bender''s password hash might not help you very much.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-benders-user-account'
-  key: loginBenderChallenge
--
-  name: 'Password Strength'
-  category: 'Broken Authentication'
-  description: 'Log in with the administrator''s user credentials without previously changing them or applying SQL Injection.'
-  difficulty: 2
-  hint: 'This one should be equally easy to a) brute force, b) crack the password hash or c) simply guess.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#log-in-with-the-administrators-user-credentials-without-previously-changing-them-or-applying-sql-injection'
-  key: weakPasswordChallenge
--
-  name: 'Five-Star Feedback'
-  category: 'Broken Access Control'
-  description: 'Get rid of all 5-star customer feedback.'
-  difficulty: 2
-  hint: 'Once you found admin section of the application, this challenge is almost trivial.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#get-rid-of-all-5-star-customer-feedback'
-  key: feedbackChallenge
--
-  name: 'Forged Feedback'
-  category: 'Broken Access Control'
-  description: 'Post some feedback in another users name.'
-  difficulty: 1
+#-
+#  name: 'Login Bender'
+#  category: 'Injection'
+#  description: 'Log in with Bender''s user account.'
+#  difficulty: 3
+#  hint: 'If you know Bender''s email address, try SQL Injection. Bender''s password hash might not help you very much.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-benders-user-account'
+#  key: loginBenderChallenge
+#-
+#  name: 'Password Strength'
+#  category: 'Broken Authentication'
+#  description: 'Log in with the administrator''s user credentials without previously changing them or applying SQL Injection.'
+#  difficulty: 2
+#  hint: 'This one should be equally easy to a) brute force, b) crack the password hash or c) simply guess.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#log-in-with-the-administrators-user-credentials-without-previously-changing-them-or-applying-sql-injection'
+#  key: weakPasswordChallenge
+#-
+#  name: 'Five-Star Feedback'
+#  category: 'Broken Access Control'
+#  description: 'Get rid of all 5-star customer feedback.'
+#  difficulty: 2
+#  hint: 'Once you found admin section of the application, this challenge is almost trivial.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#get-rid-of-all-5-star-customer-feedback'
+#  key: feedbackChallenge
+#-
+#  name: 'Forged Feedback'
+#  category: 'Broken Access Control'
+#  description: 'Post some feedback in another users name.'
+#  difficulty: 1
   # difficulty: 3
-  hint: 'You can solve this by tampering with the user interface or by intercepting the communication with the RESTful backend.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#post-some-feedback-in-another-users-name'
-  key: forgedFeedbackChallenge
+#  hint: 'You can solve this by tampering with the user interface or by intercepting the communication with the RESTful backend.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#post-some-feedback-in-another-users-name'
+#  key: forgedFeedbackChallenge
 -
   name: 'Redirects Tier 1'
   category: 'Forgotten Content'
