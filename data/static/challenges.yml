@@ -23,7 +23,7 @@
 #  hint: 'Try to submit bad input to forms. Alternatively tamper with URL paths or parameters.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-misconfiguration.html#provoke-an-error-that-is-not-very-gracefully-handled'
 #  key: errorHandlingChallenge
- -
+-
   name: 'Forged Review'
   category: 'Broken Access Control'
   description: 'Post a product review as another user or edit any user''s existing review.'
