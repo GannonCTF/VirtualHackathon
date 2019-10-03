@@ -82,23 +82,23 @@
 #  hint: 'You can solve this by tampering with the user interface or by intercepting the communication with the RESTful backend.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#post-some-feedback-in-another-users-name'
 #  key: forgedFeedbackChallenge
--
-  name: 'Redirects Tier 1'
-  category: 'Forgotten Content'
-  description: 'Let us redirect you to a donation site that went out of business.'
+#-
+#  name: 'Redirects Tier 1'
+#  category: 'Forgotten Content'
+#  description: 'Let us redirect you to a donation site that went out of business.'
   # difficulty: 1
-  difficulty: 2
-  hint: 'We might have failed to take this out of our code properly.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#let-us-redirect-you-to-a-donation-site-that-went-out-of-business'
-  key: redirectGratipayChallenge
--
-  name: 'Redirects Tier 2'
-  category: 'Roll your own Security'
-  description: 'Wherever you go, there you are.'
-  difficulty: 4
-  hint: 'You have to find a way to beat the whitelist of allowed redirect URLs.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#wherever-you-go-there-you-are'
-  key: redirectChallenge
+#  difficulty: 2
+#  hint: 'We might have failed to take this out of our code properly.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#let-us-redirect-you-to-a-donation-site-that-went-out-of-business'
+#  key: redirectGratipayChallenge
+#-
+#  name: 'Redirects Tier 2'
+#  category: 'Roll your own Security'
+#  description: 'Wherever you go, there you are.'
+#  difficulty: 4
+#  hint: 'You have to find a way to beat the whitelist of allowed redirect URLs.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#wherever-you-go-there-you-are'
+#  key: redirectChallenge
 -
   name: 'Basket Access Tier 1'
   category: 'Broken Access Control'
