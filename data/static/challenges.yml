@@ -115,40 +115,40 @@
 #  hint: 'Have an eye on the HTTP traffic while placing products in the shopping basket. Changing the quantity of products already in the basket doesn''t count.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#put-an-additional-product-into-another-users-shopping-basket'
 #  key: basketManipulateChallenge
--
-  name: 'Payback Time'
-  category: 'Improper Input Validation'
-  description: 'Place an order that makes you rich.'
+#-
+#  name: 'Payback Time'
+#  category: 'Improper Input Validation'
+#  description: 'Place an order that makes you rich.'
   #difficulty: 1
-  difficulty: 2
-  hint: 'You literally need to make the shop owe you any amount of money.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#place-an-order-that-makes-you-rich'
-  key: negativeOrderChallenge
--
-  name: 'Confidential Document'
-  category: 'Sensitive Data Exposure'
-  description: 'Access a confidential document.'
+#  difficulty: 2
+#  hint: 'You literally need to make the shop owe you any amount of money.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#place-an-order-that-makes-you-rich'
+#  key: negativeOrderChallenge
+#-
+#  name: 'Confidential Document'
+#  category: 'Sensitive Data Exposure'
+#  description: 'Access a confidential document.'
   # difficulty: 1
-  difficulty: 2
-  hint: 'Analyze and tamper with links in the application that deliver a file directly.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#access-a-confidential-document'
-  key: directoryListingChallenge
--
-  name: 'Forgotten Developer Backup'
-  category: 'Roll your own Security'
-  description: 'Access a developer''s forgotten backup file.'
-  difficulty: 4
-  hint: 'You need to trick a security mechanism into thinking that the file you want has a valid file type.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#access-a-developers-forgotten-backup-file'
-  key: forgottenDevBackupChallenge
--
-  name: 'Forgotten Sales Backup'
-  category: 'Security Misconfiguration'
-  description: 'Access a salesman''s forgotten backup file.'
-  difficulty: 3
-  hint: 'You need to trick a security mechanism into thinking that the file you want has a valid file type.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-misconfiguration.html#access-a-salesmans-forgotten-backup-file'
-  key: forgottenBackupChallenge
+#  difficulty: 2
+#  hint: 'Analyze and tamper with links in the application that deliver a file directly.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#access-a-confidential-document'
+#  key: directoryListingChallenge
+#-
+#  name: 'Forgotten Developer Backup'
+#  category: 'Roll your own Security'
+#  description: 'Access a developer''s forgotten backup file.'
+#  difficulty: 4
+#  hint: 'You need to trick a security mechanism into thinking that the file you want has a valid file type.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#access-a-developers-forgotten-backup-file'
+#  key: forgottenDevBackupChallenge
+#-
+#  name: 'Forgotten Sales Backup'
+#  category: 'Security Misconfiguration'
+#  description: 'Access a salesman''s forgotten backup file.'
+#  difficulty: 3
+#  hint: 'You need to trick a security mechanism into thinking that the file you want has a valid file type.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-misconfiguration.html#access-a-salesmans-forgotten-backup-file'
+#  key: forgottenBackupChallenge
 -
   name: 'Admin Section'
   category: 'Broken Access Control'
