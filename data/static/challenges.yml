@@ -99,14 +99,14 @@
 #  hint: 'You have to find a way to beat the whitelist of allowed redirect URLs.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#wherever-you-go-there-you-are'
 #  key: redirectChallenge
--
-  name: 'Basket Access Tier 1'
-  category: 'Broken Access Control'
-  description: 'View another user''s shopping basket.'
-  difficulty: 2
-  hint: 'Have an eye on the HTTP traffic while shopping. Alternatively try to find a client-side association of users to their basket.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#view-another-users-shopping-basket'
-  key: basketAccessChallenge
+#-
+#  name: 'Basket Access Tier 1'
+#  category: 'Broken Access Control'
+#  description: 'View another user''s shopping basket.'
+#  difficulty: 2
+#  hint: 'Have an eye on the HTTP traffic while shopping. Alternatively try to find a client-side association of users to their basket.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#view-another-users-shopping-basket'
+#  key: basketAccessChallenge
 -
   name: 'Basket Access Tier 2'
   category: 'Broken Access Control'
