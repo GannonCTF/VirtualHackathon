@@ -107,14 +107,14 @@
 #  hint: 'Have an eye on the HTTP traffic while shopping. Alternatively try to find a client-side association of users to their basket.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#view-another-users-shopping-basket'
 #  key: basketAccessChallenge
--
-  name: 'Basket Access Tier 2'
-  category: 'Broken Access Control'
-  description: 'Put an additional product into another user''s shopping basket.'
-  difficulty: 3
-  hint: 'Have an eye on the HTTP traffic while placing products in the shopping basket. Changing the quantity of products already in the basket doesn''t count.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#put-an-additional-product-into-another-users-shopping-basket'
-  key: basketManipulateChallenge
+#-
+#  name: 'Basket Access Tier 2'
+#  category: 'Broken Access Control'
+#  description: 'Put an additional product into another user''s shopping basket.'
+#  difficulty: 3
+#  hint: 'Have an eye on the HTTP traffic while placing products in the shopping basket. Changing the quantity of products already in the basket doesn''t count.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#put-an-additional-product-into-another-users-shopping-basket'
+#  key: basketManipulateChallenge
 -
   name: 'Payback Time'
   category: 'Improper Input Validation'
