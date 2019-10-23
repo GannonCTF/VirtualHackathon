@@ -229,47 +229,47 @@
 #  hint: 'Look out for a tweet praising new functionality of the web shop.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#overwrite-the-legal-information-file'
 #  key: fileWriteChallenge
--
-  name: 'Extra Language'
-  category: 'Forgotten Content'
-  description: 'Retrieve the language file that never made it into production.'
-  difficulty: 5
-  hint: 'Brute force is not the only option for this challenge, but a perfectly viable one.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#retrieve-the-language-file-that-never-made-it-into-production'
-  key: extraLanguageChallenge
--
-  name: 'CAPTCHA Bypass Tier 1'
-  category: 'Roll your own Security'
-  description: 'Submit 10 or more customer feedbacks within 10 seconds.'
-  difficulty: 3
-  hint: 'After finding a CAPTCHA bypass, write a script that automates feedback submission. Or open many browser tabs and be really quick.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#submit-10-or-more-customer-feedbacks-within-10-seconds'
-  key: captchaBypassChallenge
--
-  name: 'Zero Stars'
-  category: 'Improper Input Validation'
-  description: 'Give a devastating zero-star feedback to the store.'
-  # difficulty: 1
-  difficulty: 2
-  hint: 'Before you invest time bypassing the API, you might want to play around with the UI a bit.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#give-a-devastating-zero-star-feedback-to-the-store'
-  key: zeroStarsChallenge
--
-  name: 'Imaginary Challenge'
-  category: 'Sensitive Data Exposure'
-  description: 'Solve challenge #999. Unfortunately, this challenge does not exist.'
-  difficulty: 6
-  hint: 'You need to trick the hacking progress persistence feature into thinking you solved challenge #999.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#solve-challenge-999'
-  key: continueCodeChallenge
--
-  name: 'Login Bjoern'
-  category: 'Broken Authentication'
-  description: 'Log in with Bjoern''s Gmail account <i>without</i> previously changing his password, applying SQL Injection, or hacking his Google account.'
-  difficulty: 4
-  hint: 'The security flaw behind this challenge is 100% Juice Shop''s fault and 0% Google''s.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#log-in-with-bjoerns-gmail-account'
-  key: oauthUserPasswordChallenge
+#-
+#  name: 'Extra Language'
+#  category: 'Forgotten Content'
+#  description: 'Retrieve the language file that never made it into production.'
+#  difficulty: 5
+#  hint: 'Brute force is not the only option for this challenge, but a perfectly viable one.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#retrieve-the-language-file-that-never-made-it-into-production'
+#  key: extraLanguageChallenge
+#-
+#  name: 'CAPTCHA Bypass Tier 1'
+#  category: 'Roll your own Security'
+#  description: 'Submit 10 or more customer feedbacks within 10 seconds.'
+#  difficulty: 3
+#  hint: 'After finding a CAPTCHA bypass, write a script that automates feedback submission. Or open many browser tabs and be really quick.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#submit-10-or-more-customer-feedbacks-within-10-seconds'
+#  key: captchaBypassChallenge
+#-
+#  name: 'Zero Stars'
+#  category: 'Improper Input Validation'
+#  description: 'Give a devastating zero-star feedback to the store.'
+#  # difficulty: 1
+#  difficulty: 2
+#  hint: 'Before you invest time bypassing the API, you might want to play around with the UI a bit.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#give-a-devastating-zero-star-feedback-to-the-store'
+#  key: zeroStarsChallenge
+#-
+#  name: 'Imaginary Challenge'
+#  category: 'Sensitive Data Exposure'
+#  description: 'Solve challenge #999. Unfortunately, this challenge does not exist.'
+#  difficulty: 6
+#  hint: 'You need to trick the hacking progress persistence feature into thinking you solved challenge #999.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#solve-challenge-999'
+#  key: continueCodeChallenge
+#-
+#  name: 'Login Bjoern'
+#  category: 'Broken Authentication'
+#  description: 'Log in with Bjoern''s Gmail account <i>without</i> previously changing his password, applying SQL Injection, or hacking his Google account.'
+#  difficulty: 4
+#  hint: 'The security flaw behind this challenge is 100% Juice Shop''s fault and 0% Google''s.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#log-in-with-bjoerns-gmail-account'
+#  key: oauthUserPasswordChallenge
 -
   name: 'Login CISO'
   category: 'Broken Authentication'
