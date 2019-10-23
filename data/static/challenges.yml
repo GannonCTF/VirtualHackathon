@@ -173,30 +173,30 @@
 #  hint: 'Report one of two possible answers via the "Contact Us" form. Do not forget to submit the library''s version as well.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-vulnerable-library-it-is-using'
 #  key: knownVulnerableComponentChallenge
--
-  name: 'Weird Crypto'
-  category: 'Sensitive Data Exposure'
-  description: '<a href="/#/contact">Inform the shop</a> about an algorithm or library it should definitely not use the way it does.'
-  difficulty: 2
-  hint: 'Report one of four possible answers via the "Contact Us" form.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#inform-the-shop-about-an-algorithm-or-library-it-should-definitely-not-use-the-way-it-does'
-  key: weirdCryptoChallenge
--
-  name: 'Easter Egg Tier 1'
-  category: 'Roll your own Security'
-  description: 'Find the hidden <a href="http://en.wikipedia.org/wiki/Easter_egg_(media)" target="_blank">easter egg</a>.'
-  difficulty: 4
-  hint: 'If you solved one of the three file access challenges, you already know where to find the easter egg.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#find-the-hidden-easter-egg'
-  key: easterEggLevelOneChallenge
--
-  name: 'Easter Egg Tier 2'
-  category: 'Security through Obscurity'
-  description: 'Apply some advanced cryptanalysis to find <i>the real</i> easter egg.'
-  difficulty: 4
-  hint: 'You might have to peel through several layers of tough-as-nails encryption for this challenge.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-through-obscurity.html#apply-some-advanced-cryptanalysis-to-find-the-real-easter-egg'
-  key: easterEggLevelTwoChallenge
+#-
+#  name: 'Weird Crypto'
+#  category: 'Sensitive Data Exposure'
+#  description: '<a href="/#/contact">Inform the shop</a> about an algorithm or library it should definitely not use the way it does.'
+#  difficulty: 2
+#  hint: 'Report one of four possible answers via the "Contact Us" form.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#inform-the-shop-about-an-algorithm-or-library-it-should-definitely-not-use-the-way-it-does'
+#  key: weirdCryptoChallenge
+#-
+#  name: 'Easter Egg Tier 1'
+#  category: 'Roll your own Security'
+#  description: 'Find the hidden <a href="http://en.wikipedia.org/wiki/Easter_egg_(media)" target="_blank">easter egg</a>.'
+#  difficulty: 4
+#  hint: 'If you solved one of the three file access challenges, you already know where to find the easter egg.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#find-the-hidden-easter-egg'
+#  key: easterEggLevelOneChallenge
+#-
+#  name: 'Easter Egg Tier 2'
+#  category: 'Security through Obscurity'
+#  description: 'Apply some advanced cryptanalysis to find <i>the real</i> easter egg.'
+#  difficulty: 4
+#  hint: 'You might have to peel through several layers of tough-as-nails encryption for this challenge.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-through-obscurity.html#apply-some-advanced-cryptanalysis-to-find-the-real-easter-egg'
+#  key: easterEggLevelTwoChallenge
 -
   name: 'Forged Coupon'
   category: 'Sensitive Data Exposure'
