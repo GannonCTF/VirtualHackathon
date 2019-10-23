@@ -165,14 +165,14 @@
   hint: 'Look for one of the following: a) broken admin functionality, b) holes in RESTful API or c) possibility for SQL Injection.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#change-the-href-of-the-link-within-the-o-saft-product-description'
   key: changeProductChallenge
--
-  name: 'Vulnerable Library'
-  category: 'Vulnerable Components'
-  description: '<a href="/#/contact">Inform the shop</a> about a vulnerable library it is using. (Mention the exact library name and version in your comment)'
-  difficulty: 4
-  hint: 'Report one of two possible answers via the "Contact Us" form. Do not forget to submit the library''s version as well.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-vulnerable-library-it-is-using'
-  key: knownVulnerableComponentChallenge
+#-
+#  name: 'Vulnerable Library'
+#  category: 'Vulnerable Components'
+#  description: '<a href="/#/contact">Inform the shop</a> about a vulnerable library it is using. (Mention the exact library name and version in your comment)'
+#  difficulty: 4
+#  hint: 'Report one of two possible answers via the "Contact Us" form. Do not forget to submit the library''s version as well.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-vulnerable-library-it-is-using'
+#  key: knownVulnerableComponentChallenge
 -
   name: 'Weird Crypto'
   category: 'Sensitive Data Exposure'
