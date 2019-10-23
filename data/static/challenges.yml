@@ -245,15 +245,15 @@
 #  hint: 'After finding a CAPTCHA bypass, write a script that automates feedback submission. Or open many browser tabs and be really quick.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#submit-10-or-more-customer-feedbacks-within-10-seconds'
 #  key: captchaBypassChallenge
-#-
-#  name: 'Zero Stars'
-#  category: 'Improper Input Validation'
-#  description: 'Give a devastating zero-star feedback to the store.'
-#  # difficulty: 1
+-
+  name: 'Zero Stars'
+  category: 'Improper Input Validation'
+  description: 'Give a devastating zero-star feedback to the store.'
+  difficulty: 1
 #  difficulty: 2
-#  hint: 'Before you invest time bypassing the API, you might want to play around with the UI a bit.'
-#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#give-a-devastating-zero-star-feedback-to-the-store'
-#  key: zeroStarsChallenge
+  hint: 'Before you invest time bypassing the API, you might want to play around with the UI a bit.'
+  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#give-a-devastating-zero-star-feedback-to-the-store'
+  key: zeroStarsChallenge
 #-
 #  name: 'Imaginary Challenge'
 #  category: 'Sensitive Data Exposure'
