@@ -197,38 +197,38 @@
 #  hint: 'You might have to peel through several layers of tough-as-nails encryption for this challenge.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-through-obscurity.html#apply-some-advanced-cryptanalysis-to-find-the-real-easter-egg'
 #  key: easterEggLevelTwoChallenge
--
-  name: 'Forged Coupon'
-  category: 'Sensitive Data Exposure'
-  description: 'Forge a coupon code that gives you a discount of at least 80%.'
-  difficulty: 6
-  hint: 'Try either a) a knowledgable brute force attack or b) reverse engineering or c) some research in the cloud.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#forge-a-coupon-code-that-gives-you-a-discount-of-at-least-80'
-  key: forgedCouponChallenge
--
-  name: 'Upload Size'
-  category: 'Improper Input Validation'
-  description: 'Upload a file larger than 100 kB.'
-  difficulty: 3
-  hint: 'You can attach a small file to the "File Complaint" form. Investigate how this upload actually works.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#upload-a-file-larger-than-100-kb'
-  key: uploadSizeChallenge
--
-  name: 'Upload Type'
-  category: 'Improper Input Validation'
-  description: 'Upload a file that has no .pdf extension.'
-  difficulty: 3
-  hint: 'You can attach a PDF file to the "File Complaint" form. Investigate how this upload actually works.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#upload-a-file-that-has-no-pdf-extension'
-  key: uploadTypeChallenge
--
-  name: 'Arbitrary File Write'
-  category: 'Vulnerable Components'
-  description: 'Overwrite the <a href="/ftp/legal.md">Legal Information</a> file.'
-  difficulty: 6
-  hint: 'Look out for a tweet praising new functionality of the web shop.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#overwrite-the-legal-information-file'
-  key: fileWriteChallenge
+#-
+#  name: 'Forged Coupon'
+#  category: 'Sensitive Data Exposure'
+#  description: 'Forge a coupon code that gives you a discount of at least 80%.'
+#  difficulty: 6
+#  hint: 'Try either a) a knowledgable brute force attack or b) reverse engineering or c) some research in the cloud.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#forge-a-coupon-code-that-gives-you-a-discount-of-at-least-80'
+#  key: forgedCouponChallenge
+#-
+#  name: 'Upload Size'
+#  category: 'Improper Input Validation'
+#  description: 'Upload a file larger than 100 kB.'
+#  difficulty: 3
+#  hint: 'You can attach a small file to the "File Complaint" form. Investigate how this upload actually works.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#upload-a-file-larger-than-100-kb'
+#  key: uploadSizeChallenge
+#-
+#  name: 'Upload Type'
+#  category: 'Improper Input Validation'
+#  description: 'Upload a file that has no .pdf extension.'
+#  difficulty: 3
+#  hint: 'You can attach a PDF file to the "File Complaint" form. Investigate how this upload actually works.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#upload-a-file-that-has-no-pdf-extension'
+#  key: uploadTypeChallenge
+#-
+#  name: 'Arbitrary File Write'
+#  category: 'Vulnerable Components'
+#  description: 'Overwrite the <a href="/ftp/legal.md">Legal Information</a> file.'
+#  difficulty: 6
+#  hint: 'Look out for a tweet praising new functionality of the web shop.'
+#  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#overwrite-the-legal-information-file'
+#  key: fileWriteChallenge
 -
   name: 'Extra Language'
   category: 'Forgotten Content'
