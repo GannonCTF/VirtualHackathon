@@ -531,15 +531,15 @@
 #   hint: 'Look for an input field where its content appears in the HTML when its form is submitted.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
 #   key: localXssChallenge
--
-  name: 'XSS Tier 2'
-  category: 'XSS'
-  description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> bypassing a <i>client-side</i> security mechanism.'
-  difficulty: 3
-  #difficulty: 1
-  hint: 'Only some input fields validate their input. Even less of these are persisted in a way where their content is shown on another screen.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-bypassing-a-client-side-security-mechanism'
-  key: persistedXssChallengeUser
+# -
+#   name: 'XSS Tier 2'
+#   category: 'XSS'
+#   description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> bypassing a <i>client-side</i> security mechanism.'
+#   difficulty: 3
+#   #difficulty: 1
+#   hint: 'Only some input fields validate their input. Even less of these are persisted in a way where their content is shown on another screen.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-bypassing-a-client-side-security-mechanism'
+#   key: persistedXssChallengeUser
 -
   name: 'XSS Tier 3'
   category: 'XSS'
@@ -558,113 +558,113 @@
   hint: 'The "Comment" field in the "Contact Us" screen is where you want to put your focus on.'
   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-bypassing-a-server-side-security-mechanism'
   key: persistedXssChallengeFeedback
--
-  name: 'CSRF'
-  category: 'Broken Authentication'
-  description: 'Change Bender''s password into <i>slurmCl4ssic</i> without using SQL Injection or Forgot Password.'
-  difficulty: 5
-  hint: 'The fact that the name of this challenge is "CSRF" is already a huge hint.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#change-benders-password-into-slurmcl4ssic-without-using-sql-injection-or-forgot-password'
-  key: csrfChallenge
--
-  name: 'XSS Tier 5'
-  category: 'XSS'
-  description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> through an HTTP header.'
-  difficulty: 4
-  hint: 'Finding a piece of displayed information that could originate from an HTTP header is the part of this challenge.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-through-an-http-header'
-  key: httpHeaderXssChallenge
--
-  name: 'Multiple Likes'
-  category: 'Race Condition'
-  description: 'Like any review at least three times as the same user.'
-  difficulty: 6
-  hint: 'Punctuality is the politeness of kings.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/race-condition.html#like-any-review-at-least-three-times-as-the-same-user'
-  key: timingAttackChallenge
--
-  name: 'SSTi'
-  category: 'Injection'
-  description: 'Infect the server with juicy malware by abusing arbitrary command execution.'
-  difficulty: 6
-  hint: 'The search for a personal identity is the life of a man.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#infect-the-server-with-malware-by-abusing-arbitrary-command-execution'
-  key: sstiChallenge
-  disabledEnv:
-  - Docker
-  - Heroku
--
-  name: 'SSRF'
-  category: 'Broken Access Control'
-  description: 'Request a hidden resource on server through server.'
-  difficulty: 6
-  hint: 'Reverse the Bad and it gets Good again.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#request-a-hidden-resource-on-server-through-server'
-  key: ssrfChallenge
--
-  name: 'Login Amy'
-  category: 'Sensitive Data Exposure'
-  description: 'Log in with Amy''s original user credentials. (This could take 93.83 billion trillion trillion centuries to brute force, but luckily she did not read the "One Important Final Note")'
-  difficulty: 3
-  hint: 'This challenge will make you go after a needle in a haystack.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#log-in-with-amys-original-user-credentials'
-  key: loginAmyChallenge
--
-  name: 'XSS Tier 1.5'
-  category: 'XSS'
-  description: 'Perform an XSS attack with <code>&lt;script&gt;alert(`xss`)&lt;/script&gt;</code> on a legacy page within the application.'
-  difficulty: 2
-  #difficulty: 1
-  hint: 'What is even "better" than homegrown validation based on a RegEx? Homegrown sanitization based on a RegEx!'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-an-xss-attack-on-a-legacy-page-within-the-application'
-  key: usernameXssChallenge
--  
-  name: 'Reset Bjoern''s Password Tier 1'
-  category: 'Broken Authentication'
-  description: 'Reset the password of Bjoern''s OWASP account via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
-  difficulty: 3
-  hint: 'He might have spoilered it on at least one occasion where a camera was running. Maybe elsewhere as well.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-the-password-of-bjoerns-owasp-account-via-the-forgot-password-mechanism'
-  key: resetPasswordBjoernOwaspChallenge
--
-  name: 'Access Log'
-  category: 'Sensitive Data Exposure'
-  description: 'Gain access to any access log file of the server.'
-  difficulty: 4
-  hint: 'Who would want a server access log to be accessible through a web application?'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#gain-access-to-any-access-log-file-of-the-server'
-  key: accessLogDisclosureChallenge
--
-  name: 'DLP Failure Tier 1'
-  category: 'Sensitive Data Exposure'
-  description: 'Identify an unsafe product that was removed from the shop and <a href="/#/contact">inform the shop</a> which ingredients are dangerous.'
-  difficulty: 4
-  hint: 'Your own SQLi and someone else''s Ctrl-V will be your accomplices in this challenge!'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#identify-an-unsafe-product-that-was-removed-from-the-shop-and-inform-the-shop-which-ingredients-are-dangerous'
-  key: dlpPastebinDataLeakChallenge 
--
-  name: 'DLP Failure Tier 2'
-  category: 'Sensitive Data Exposure'
-  description: 'Dumpster dive the Internet for a leaked password and log in to the original user account it belongs to. (Creating a new account with the same password does not qualify as a solution.)'
-  difficulty: 5
-  hint: 'Once you have it, a technique called "Password Spraying" might prove useful.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#dumpster-dive-the-internet-for-a-leaked-password-and-log-in-to-the-original-user-account-it-belongs-to'
-  key: dlpPasswordSprayingChallenge
--
-  name: 'Lost in Recycling'
-  category: 'Injection'
-  description: 'Find an old <a href="/#/recycle">Recycle request</a> and <a href="/#/contact">inform the shop</a> about its unusual address. (Mention the entire delivery or pickup address in your comment)'
-  difficulty: 4
-  hint: 'Although we really like environmentalists, please do not spam us with too many requests at a time. We are not that keen on doing another DB cleanup any time soon!'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#find-an-old-recycle-request-and-inform-the-shop-about-its-unusual-address'
-  key: recyclesMissingItemChallenge
--
-  name: 'Two Factor Authentication'
-  category: 'Broken Authentication'
-  description: 'Solve the 2FA challenge for user "wurstbrot". (Disabling, bypassing or overwriting his 2FA settings does not count as a solution)'
-  difficulty: 5
-  hint: 'The 2FA implementation requires to store a secret for every user. You will need to find a way to access this secret in order to solve this challenge.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#solve-the-2fa-challenge-for-user-wurstbrot'
-  key: twoFactorAuthUnsafeSecretStorage
+# -
+#   name: 'CSRF'
+#   category: 'Broken Authentication'
+#   description: 'Change Bender''s password into <i>slurmCl4ssic</i> without using SQL Injection or Forgot Password.'
+#   difficulty: 5
+#   hint: 'The fact that the name of this challenge is "CSRF" is already a huge hint.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#change-benders-password-into-slurmcl4ssic-without-using-sql-injection-or-forgot-password'
+#   key: csrfChallenge
+# -
+#   name: 'XSS Tier 5'
+#   category: 'XSS'
+#   description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> through an HTTP header.'
+#   difficulty: 4
+#   hint: 'Finding a piece of displayed information that could originate from an HTTP header is the part of this challenge.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-through-an-http-header'
+#   key: httpHeaderXssChallenge
+# -
+#   name: 'Multiple Likes'
+#   category: 'Race Condition'
+#   description: 'Like any review at least three times as the same user.'
+#   difficulty: 6
+#   hint: 'Punctuality is the politeness of kings.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/race-condition.html#like-any-review-at-least-three-times-as-the-same-user'
+#   key: timingAttackChallenge
+# -
+#   name: 'SSTi'
+#   category: 'Injection'
+#   description: 'Infect the server with juicy malware by abusing arbitrary command execution.'
+#   difficulty: 6
+#   hint: 'The search for a personal identity is the life of a man.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#infect-the-server-with-malware-by-abusing-arbitrary-command-execution'
+#   key: sstiChallenge
+#   disabledEnv:
+#   - Docker
+#   - Heroku
+# -
+#   name: 'SSRF'
+#   category: 'Broken Access Control'
+#   description: 'Request a hidden resource on server through server.'
+#   difficulty: 6
+#   hint: 'Reverse the Bad and it gets Good again.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#request-a-hidden-resource-on-server-through-server'
+#   key: ssrfChallenge
+# -
+#   name: 'Login Amy'
+#   category: 'Sensitive Data Exposure'
+#   description: 'Log in with Amy''s original user credentials. (This could take 93.83 billion trillion trillion centuries to brute force, but luckily she did not read the "One Important Final Note")'
+#   difficulty: 3
+#   hint: 'This challenge will make you go after a needle in a haystack.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#log-in-with-amys-original-user-credentials'
+#   key: loginAmyChallenge
+# -
+#   name: 'XSS Tier 1.5'
+#   category: 'XSS'
+#   description: 'Perform an XSS attack with <code>&lt;script&gt;alert(`xss`)&lt;/script&gt;</code> on a legacy page within the application.'
+#   difficulty: 2
+#   #difficulty: 1
+#   hint: 'What is even "better" than homegrown validation based on a RegEx? Homegrown sanitization based on a RegEx!'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-an-xss-attack-on-a-legacy-page-within-the-application'
+#   key: usernameXssChallenge
+# -  
+#   name: 'Reset Bjoern''s Password Tier 1'
+#   category: 'Broken Authentication'
+#   description: 'Reset the password of Bjoern''s OWASP account via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+#   difficulty: 3
+#   hint: 'He might have spoilered it on at least one occasion where a camera was running. Maybe elsewhere as well.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-the-password-of-bjoerns-owasp-account-via-the-forgot-password-mechanism'
+#   key: resetPasswordBjoernOwaspChallenge
+# -
+#   name: 'Access Log'
+#   category: 'Sensitive Data Exposure'
+#   description: 'Gain access to any access log file of the server.'
+#   difficulty: 4
+#   hint: 'Who would want a server access log to be accessible through a web application?'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#gain-access-to-any-access-log-file-of-the-server'
+#   key: accessLogDisclosureChallenge
+# -
+#   name: 'DLP Failure Tier 1'
+#   category: 'Sensitive Data Exposure'
+#   description: 'Identify an unsafe product that was removed from the shop and <a href="/#/contact">inform the shop</a> which ingredients are dangerous.'
+#   difficulty: 4
+#   hint: 'Your own SQLi and someone else''s Ctrl-V will be your accomplices in this challenge!'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#identify-an-unsafe-product-that-was-removed-from-the-shop-and-inform-the-shop-which-ingredients-are-dangerous'
+#   key: dlpPastebinDataLeakChallenge 
+# -
+#   name: 'DLP Failure Tier 2'
+#   category: 'Sensitive Data Exposure'
+#   description: 'Dumpster dive the Internet for a leaked password and log in to the original user account it belongs to. (Creating a new account with the same password does not qualify as a solution.)'
+#   difficulty: 5
+#   hint: 'Once you have it, a technique called "Password Spraying" might prove useful.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#dumpster-dive-the-internet-for-a-leaked-password-and-log-in-to-the-original-user-account-it-belongs-to'
+#   key: dlpPasswordSprayingChallenge
+# -
+#   name: 'Lost in Recycling'
+#   category: 'Injection'
+#   description: 'Find an old <a href="/#/recycle">Recycle request</a> and <a href="/#/contact">inform the shop</a> about its unusual address. (Mention the entire delivery or pickup address in your comment)'
+#   difficulty: 4
+#   hint: 'Although we really like environmentalists, please do not spam us with too many requests at a time. We are not that keen on doing another DB cleanup any time soon!'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#find-an-old-recycle-request-and-inform-the-shop-about-its-unusual-address'
+#   key: recyclesMissingItemChallenge
+# -
+#   name: 'Two Factor Authentication'
+#   category: 'Broken Authentication'
+#   description: 'Solve the 2FA challenge for user "wurstbrot". (Disabling, bypassing or overwriting his 2FA settings does not count as a solution)'
+#   difficulty: 5
+#   hint: 'The 2FA implementation requires to store a secret for every user. You will need to find a way to access this secret in order to solve this challenge.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#solve-the-2fa-challenge-for-user-wurstbrot'
+#   key: twoFactorAuthUnsafeSecretStorage
 
 
