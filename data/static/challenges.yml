@@ -31,15 +31,15 @@
 #  hint: 'Observe the flow of product review posting and editing and see if you can exploit it.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#post-a-product-review-as-another-user-or-edit-any-users-existing-review'
 #  key: forgedReviewChallenge
-#-
-#  name: 'Login Admin'
-#  category: 'Injection'
-#  description: 'Log in with the administrator''s user account.'
+-
+  name: 'Login Admin'
+  category: 'Injection'
+  description: 'Log in with the administrator''s user account.'
 #  difficulty: 2
-  #difficulty: 1
-#  hint: 'Try different SQL Injection attack patterns depending whether you know the admin''s email address or not.'
+  difficulty: 1
+  hint: 'Try different SQL Injection attack patterns depending whether you know the admin''s email address or not.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-the-administrators-user-account'
-#  key: loginAdminChallenge
+  key: loginAdminChallenge
 -
   name: 'Login Jim'
   category: 'Injection'
