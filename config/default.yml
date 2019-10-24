@@ -4,7 +4,8 @@ application:
   domain: juice-sh.op
   name: 'GU Shop'
   logo: Gannon-Knight.png
-  favicon: favicon_js.ico
+  #favicon: favicon_js.ico
+  favicon: Gannon-Knight.png
   numberOfRandomFakeUsers: 0
   showChallengeSolvedNotifications: true
   showChallengeHints: true
