@@ -376,152 +376,152 @@
 #   hint: 'This challenge has nothing to do with URLs or domains. Investigate the forgotten developer''s backup file instead.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-typosquatting-trick-it-has-become-victim-of'
 #   key: typosquattingNpmChallenge
--
-  name: 'Typosquatting Tier 2'
-  category: 'Vulnerable Components'
-  description: '<a href="/#/contact">Inform the shop</a> about a more sneaky instance of <i>typosquatting</i> it fell for. (Mention the exact name of the culprit)'
-  difficulty: 5
-  hint: 'This challenge has nothing to do with URLs or domains. There is no conveniently misplaced file helping you with this one. Or is there?'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-more-sneaky-instance-of-typosquatting-it-fell-for'
-  key: typosquattingAngularChallenge
--
-  name: 'JWT Issues Tier 1'
-  category: 'Vulnerable Components'
-  description: 'Forge an essentially unsigned JWT token that impersonates the (non-existing) user <i>jwtn3d@juice-sh.op</i>.'
-  difficulty: 5
-  hint: 'This challenge exploits a weird option that is supported when signing tokens with JWT.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#forge-an-essentially-unsigned-jwt-token'
-  key: jwtTier1Challenge
--
-  name: 'JWT Issues Tier 2'
-  category: 'Vulnerable Components'
-  description: 'Forge an almost properly RSA-signed JWT token that impersonates the (non-existing) user <i>rsa_lord@juice-sh.op</i>.'
-  difficulty: 6
-  hint: 'This challenge is explicitly not about acquiring the RSA private key used for JWT signing.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#forge-an-almost-properly-rsa-signed-jwt-token'
-  key: jwtTier2Challenge
--
-  name: 'Misplaced Signature File'
-  category: 'Roll your own Security'
-  description: 'Access a misplaced <a href="https://github.com/Neo23x0/sigma">SIEM signature</a> file.'
-  difficulty: 4
-  hint: 'You need to trick a security mechanism into thinking that the file you want has a valid file type.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#access-a-misplaced-siem-signature-file'
-  key: misplacedSignatureFileChallenge
--
-  name: 'Deprecated Interface'
-  category: 'Forgotten Content'
-  description: 'Use a deprecated B2B interface that was not properly shut down.'
-  difficulty: 2
-  hint: 'The developers who disabled the interface think they could go invisible by just closing their eyes.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#use-a-deprecated-b2b-interface-that-was-not-properly-shut-down'
-  key: deprecatedInterfaceChallenge
--
-  name: 'XXE Tier 1'
-  category: 'XXE'
-  description: 'Retrieve the content of <code>C:\Windows\system.ini</code> or <code>/etc/passwd</code> from the server.'
-  difficulty: 3
-  hint: 'The leverage point for this challenge is the deprecated B2B interface.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xxe.html#retrieve-the-content-of-cwindowssystemini-or-etcpasswd-from-the-server'
-  key: xxeFileDisclosureChallenge
-  disabledEnv:
-  - Docker
-  - Heroku
--
-  name: 'XXE Tier 2'
-  category: 'XXE'
-  description: 'Give the server something to chew on for quite a while.'
-  difficulty: 5
-  hint: 'It is not as easy as sending a large amount of data directly to the deprecated B2B interface.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xxe.html#give-the-server-something-to-chew-on-for-quite-a-while'
-  key: xxeDosChallenge
-  disabledEnv:
-  - Docker
-  - Heroku
--
-  name: 'RCE Tier 1'
-  category: 'Insecure Deserialization'
-  description: 'Perform a Remote Code Execution that would keep a less hardened application busy <em>forever</em>.'
-  difficulty: 5
-  hint: 'The feature you need to exploit for this challenge is not directly advertised anywhere.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/insecure-deserialization.html#perform-a-remote-code-execution-that-would-keep-a-less-hardened-application-busy-forever'
-  key: rceChallenge
--
-  name: 'RCE Tier 2'
-  category: 'Insecure Deserialization'
-  description: 'Perform a Remote Code Execution that occupies the server for a while without using infinite loops.'
-  difficulty: 6
-  hint: 'Your attack payload must not trigger the protection against too many iterations.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/insecure-deserialization.html#perform-a-remote-code-execution-that-occupies-the-server-for-a-while-without-using-infinite-loops'
-  key: rceOccupyChallenge
--
-  name: 'Blockchain Tier 1'
-  category: 'Security through Obscurity'
-  description: 'Learn about the Token Sale before its official announcement.'
-  difficulty: 5
-  hint: 'The developers truly believe in "Security through Obscurity" over actual access restrictions.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-through-obscurity.html#learn-about-the-token-sale-before-its-official-announcement'
-  key: tokenSaleChallenge
--
-  name: 'Security Policy'
-  category: 'Roll your own Security'
-  description: 'Behave like any "white-hat" should.'
-  difficulty: 2
-  hint: 'Undoubtably you want to read our security policy before conducting any research on our application.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#behave-like-any-white-hat-should'
-  key: securityPolicyChallenge
--
-  name: 'Steganography Tier 1'
-  category: 'Security through Obscurity'
-  description: '<a href="/#/contact">Rat out</a> a notorious character hiding in plain sight in the shop. (Mention the exact name of the character)'
-  difficulty: 4
-  hint: 'No matter how good your eyes are, you will need tool assistance for this challenge.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-through-obscurity.html#rat-out-a-notorious-character-hiding-in-plain-sight-in-the-shop'
-  key: hiddenImageChallenge
--
-  name: 'Supply Chain Attack'
-  category: 'Broken Authentication'
-  description: '<a href="/#/contact">Inform the development team</a> about a danger to some of <em>their</em> credentials. (Send them the URL of the <em>original report</em> or the CVE of this vulnerability)'
-  difficulty: 5
-  hint: 'This vulnerability will not affect any customer of the shop. It is aimed exclusively at its developers.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#inform-the-development-team-about-a-danger-to-some-of-their-credentials'
-  key: supplyChainAttackChallenge
--
-  name: 'Christmas Special'
-  category: 'Injection'
-  description: 'Order the Christmas special offer of 2014.'
-  difficulty: 1
-  #difficulty: 4
-  hint: 'Find out how the application handles unavailable products and try to find a loophole.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#order-the-christmas-special-offer-of-2014'
-  key: christmasSpecialChallenge
--
-  name: 'User Credentials'
-  category: 'Injection'
-  description: 'Retrieve a list of all user credentials via SQL Injection'
-  difficulty: 1
-  #difficulty: 4
-  hint: 'Craft a UNION SELECT attack string against an endpoint that offers an unnecessary way to filter data.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#retrieve-a-list-of-all-user-credentials-via-sql-injection'
-  key: unionSqlInjectionChallenge
--
-  name: 'Admin Registration'
-  category: 'Improper Input Validation'
-  description: 'Get registered as admin user.'
-  difficulty: 1
-  #difficulty: 3
-  hint: 'Assign the unassignable.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#get-registered-as-admin-user'
-  key: registerAdminChallenge
--
-  name: 'XSS Tier 0'
-  category: 'XSS'
-  description: 'Perform a <i>reflected</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
-  #difficulty: 1
-  difficulty: 2
-  hint: 'Look for an input field where its content appears in the response HTML when its form is submitted.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
-  key: reflectedXssChallenge
+# -
+#   name: 'Typosquatting Tier 2'
+#   category: 'Vulnerable Components'
+#   description: '<a href="/#/contact">Inform the shop</a> about a more sneaky instance of <i>typosquatting</i> it fell for. (Mention the exact name of the culprit)'
+#   difficulty: 5
+#   hint: 'This challenge has nothing to do with URLs or domains. There is no conveniently misplaced file helping you with this one. Or is there?'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-more-sneaky-instance-of-typosquatting-it-fell-for'
+#   key: typosquattingAngularChallenge
+# -
+#   name: 'JWT Issues Tier 1'
+#   category: 'Vulnerable Components'
+#   description: 'Forge an essentially unsigned JWT token that impersonates the (non-existing) user <i>jwtn3d@juice-sh.op</i>.'
+#   difficulty: 5
+#   hint: 'This challenge exploits a weird option that is supported when signing tokens with JWT.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#forge-an-essentially-unsigned-jwt-token'
+#   key: jwtTier1Challenge
+# -
+#   name: 'JWT Issues Tier 2'
+#   category: 'Vulnerable Components'
+#   description: 'Forge an almost properly RSA-signed JWT token that impersonates the (non-existing) user <i>rsa_lord@juice-sh.op</i>.'
+#   difficulty: 6
+#   hint: 'This challenge is explicitly not about acquiring the RSA private key used for JWT signing.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#forge-an-almost-properly-rsa-signed-jwt-token'
+#   key: jwtTier2Challenge
+# -
+#   name: 'Misplaced Signature File'
+#   category: 'Roll your own Security'
+#   description: 'Access a misplaced <a href="https://github.com/Neo23x0/sigma">SIEM signature</a> file.'
+#   difficulty: 4
+#   hint: 'You need to trick a security mechanism into thinking that the file you want has a valid file type.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#access-a-misplaced-siem-signature-file'
+#   key: misplacedSignatureFileChallenge
+# -
+#   name: 'Deprecated Interface'
+#   category: 'Forgotten Content'
+#   description: 'Use a deprecated B2B interface that was not properly shut down.'
+#   difficulty: 2
+#   hint: 'The developers who disabled the interface think they could go invisible by just closing their eyes.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#use-a-deprecated-b2b-interface-that-was-not-properly-shut-down'
+#   key: deprecatedInterfaceChallenge
+# -
+#   name: 'XXE Tier 1'
+#   category: 'XXE'
+#   description: 'Retrieve the content of <code>C:\Windows\system.ini</code> or <code>/etc/passwd</code> from the server.'
+#   difficulty: 3
+#   hint: 'The leverage point for this challenge is the deprecated B2B interface.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xxe.html#retrieve-the-content-of-cwindowssystemini-or-etcpasswd-from-the-server'
+#   key: xxeFileDisclosureChallenge
+#   disabledEnv:
+#   - Docker
+#   - Heroku
+# -
+#   name: 'XXE Tier 2'
+#   category: 'XXE'
+#   description: 'Give the server something to chew on for quite a while.'
+#   difficulty: 5
+#   hint: 'It is not as easy as sending a large amount of data directly to the deprecated B2B interface.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xxe.html#give-the-server-something-to-chew-on-for-quite-a-while'
+#   key: xxeDosChallenge
+#   disabledEnv:
+#   - Docker
+#   - Heroku
+# -
+#   name: 'RCE Tier 1'
+#   category: 'Insecure Deserialization'
+#   description: 'Perform a Remote Code Execution that would keep a less hardened application busy <em>forever</em>.'
+#   difficulty: 5
+#   hint: 'The feature you need to exploit for this challenge is not directly advertised anywhere.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/insecure-deserialization.html#perform-a-remote-code-execution-that-would-keep-a-less-hardened-application-busy-forever'
+#   key: rceChallenge
+# -
+#   name: 'RCE Tier 2'
+#   category: 'Insecure Deserialization'
+#   description: 'Perform a Remote Code Execution that occupies the server for a while without using infinite loops.'
+#   difficulty: 6
+#   hint: 'Your attack payload must not trigger the protection against too many iterations.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/insecure-deserialization.html#perform-a-remote-code-execution-that-occupies-the-server-for-a-while-without-using-infinite-loops'
+#   key: rceOccupyChallenge
+# -
+#   name: 'Blockchain Tier 1'
+#   category: 'Security through Obscurity'
+#   description: 'Learn about the Token Sale before its official announcement.'
+#   difficulty: 5
+#   hint: 'The developers truly believe in "Security through Obscurity" over actual access restrictions.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-through-obscurity.html#learn-about-the-token-sale-before-its-official-announcement'
+#   key: tokenSaleChallenge
+# -
+#   name: 'Security Policy'
+#   category: 'Roll your own Security'
+#   description: 'Behave like any "white-hat" should.'
+#   difficulty: 2
+#   hint: 'Undoubtably you want to read our security policy before conducting any research on our application.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/roll-your-own-security.html#behave-like-any-white-hat-should'
+#   key: securityPolicyChallenge
+# -
+#   name: 'Steganography Tier 1'
+#   category: 'Security through Obscurity'
+#   description: '<a href="/#/contact">Rat out</a> a notorious character hiding in plain sight in the shop. (Mention the exact name of the character)'
+#   difficulty: 4
+#   hint: 'No matter how good your eyes are, you will need tool assistance for this challenge.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-through-obscurity.html#rat-out-a-notorious-character-hiding-in-plain-sight-in-the-shop'
+#   key: hiddenImageChallenge
+# -
+#   name: 'Supply Chain Attack'
+#   category: 'Broken Authentication'
+#   description: '<a href="/#/contact">Inform the development team</a> about a danger to some of <em>their</em> credentials. (Send them the URL of the <em>original report</em> or the CVE of this vulnerability)'
+#   difficulty: 5
+#   hint: 'This vulnerability will not affect any customer of the shop. It is aimed exclusively at its developers.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#inform-the-development-team-about-a-danger-to-some-of-their-credentials'
+#   key: supplyChainAttackChallenge
+# -
+#   name: 'Christmas Special'
+#   category: 'Injection'
+#   description: 'Order the Christmas special offer of 2014.'
+#   difficulty: 1
+#   #difficulty: 4
+#   hint: 'Find out how the application handles unavailable products and try to find a loophole.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#order-the-christmas-special-offer-of-2014'
+#   key: christmasSpecialChallenge
+# -
+#   name: 'User Credentials'
+#   category: 'Injection'
+#   description: 'Retrieve a list of all user credentials via SQL Injection'
+#   difficulty: 1
+#   #difficulty: 4
+#   hint: 'Craft a UNION SELECT attack string against an endpoint that offers an unnecessary way to filter data.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#retrieve-a-list-of-all-user-credentials-via-sql-injection'
+#   key: unionSqlInjectionChallenge
+# -
+#   name: 'Admin Registration'
+#   category: 'Improper Input Validation'
+#   description: 'Get registered as admin user.'
+#   difficulty: 1
+#   #difficulty: 3
+#   hint: 'Assign the unassignable.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#get-registered-as-admin-user'
+#   key: registerAdminChallenge
+# -
+#   name: 'XSS Tier 0'
+#   category: 'XSS'
+#   description: 'Perform a <i>reflected</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
+#   #difficulty: 1
+#   difficulty: 2
+#   hint: 'Look for an input field where its content appears in the response HTML when its form is submitted.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
+#   key: reflectedXssChallenge
 #-
 #   name: 'XSS Tier 1'
 #   category: 'XSS'
