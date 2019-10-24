@@ -4,7 +4,7 @@
   description: 'Find the carefully hidden ''Score Board'' page.'
   difficulty: 1
   hint: 'Try to find a reference or clue behind the scenes. Or simply guess what URL the Score Board might have.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/score-board.html#find-the-carefully-hidden-score-board-page'
+  #hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/score-board.html#find-the-carefully-hidden-score-board-page'
   key: scoreBoardChallenge
 # -
 #   name: 'Email Leak'
@@ -47,7 +47,7 @@
   difficulty: 1
   #difficulty: 3
   hint: 'Try cracking Jim''s password hash if you harvested it already. Alternatively, if you know Jim''s email address, try SQL Injection.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-jims-user-account'
+  #hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-jims-user-account'
   key: loginJimChallenge
 #-
 #  name: 'Login Bender'
@@ -153,9 +153,10 @@
   name: 'Admin Section'
   category: 'Broken Access Control'
   description: 'Access the administration section of the store.'
-  difficulty: 2
+  difficulty: 1
+  #difficulty: 2
   hint: 'It is just slightly harder to find than the score board link.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#access-the-administration-section-of-the-store'
+  #hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-access-control.html#access-the-administration-section-of-the-store'
   key: adminSectionChallenge
 -
   name: 'Product Tampering'
@@ -513,15 +514,15 @@
 #   hint: 'Assign the unassignable.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/improper-input-validation.html#get-registered-as-admin-user'
 #   key: registerAdminChallenge
-# -
-#   name: 'XSS Tier 0'
-#   category: 'XSS'
-#   description: 'Perform a <i>reflected</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
-#   #difficulty: 1
+-
+  name: 'XSS Tier 0'
+  category: 'XSS'
+  description: 'Perform a <i>reflected</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code>.'
+  difficulty: 1
 #   difficulty: 2
-#   hint: 'Look for an input field where its content appears in the response HTML when its form is submitted.'
+  hint: 'Look for an input field where its content appears in the response HTML when its form is submitted.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
-#   key: reflectedXssChallenge
+  key: reflectedXssChallenge
 #-
 #   name: 'XSS Tier 1'
 #   category: 'XSS'
@@ -539,7 +540,7 @@
   difficulty: 1
   hint: 'Only some input fields validate their input. Even less of these are persisted in a way where their content is shown on another screen.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-bypassing-a-client-side-security-mechanism'
-#   key: persistedXssChallengeUser
+  key: persistedXssChallengeUser
 # -
 #   name: 'XSS Tier 3'
 #   category: 'XSS'
