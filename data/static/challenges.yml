@@ -352,30 +352,30 @@
 #   hint: 'Take a close look on how the equivalent of UPDATE-statements in MongoDB work.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#update-multiple-product-reviews-at-the-same-time'
 #   key: noSqlReviewsChallenge
--
-  name: 'NoSQL Injection Tier 3'
-  category: 'Injection'
-  description: 'All your orders are belong to us!'
-  difficulty: 5
-  hint: 'Take a close look on how the $where query operator works in MongoDB.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#all-your-orders-are-belong-to-us'
-  key: noSqlOrdersChallenge
--
-  name: 'Retrieve Blueprint'
-  category: 'Forgotten Content'
-  description: 'Deprive the shop of earnings by downloading the blueprint for one of its products.'
-  difficulty: 5
-  hint: 'The product you might want to give a closer look is the OWASP Juice Shop Logo (3D-printed).'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#deprive-the-shop-of-earnings-by-downloading-the-blueprint-for-one-of-its-products'
-  key: retrieveBlueprintChallenge
--
-  name: 'Typosquatting Tier 1'
-  category: 'Vulnerable Components'
-  description: '<a href="/#/contact">Inform the shop</a> about a <i>typosquatting</i> trick it has become victim of. (Mention the exact name of the culprit)'
-  difficulty: 4
-  hint: 'This challenge has nothing to do with URLs or domains. Investigate the forgotten developer''s backup file instead.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-typosquatting-trick-it-has-become-victim-of'
-  key: typosquattingNpmChallenge
+# -
+#   name: 'NoSQL Injection Tier 3'
+#   category: 'Injection'
+#   description: 'All your orders are belong to us!'
+#   difficulty: 5
+#   hint: 'Take a close look on how the $where query operator works in MongoDB.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#all-your-orders-are-belong-to-us'
+#   key: noSqlOrdersChallenge
+# -
+#   name: 'Retrieve Blueprint'
+#   category: 'Forgotten Content'
+#   description: 'Deprive the shop of earnings by downloading the blueprint for one of its products.'
+#   difficulty: 5
+#   hint: 'The product you might want to give a closer look is the OWASP Juice Shop Logo (3D-printed).'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/forgotten-content.html#deprive-the-shop-of-earnings-by-downloading-the-blueprint-for-one-of-its-products'
+#   key: retrieveBlueprintChallenge
+# -
+#   name: 'Typosquatting Tier 1'
+#   category: 'Vulnerable Components'
+#   description: '<a href="/#/contact">Inform the shop</a> about a <i>typosquatting</i> trick it has become victim of. (Mention the exact name of the culprit)'
+#   difficulty: 4
+#   hint: 'This challenge has nothing to do with URLs or domains. Investigate the forgotten developer''s backup file instead.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/vulnerable-components.html#inform-the-shop-about-a-typosquatting-trick-it-has-become-victim-of'
+#   key: typosquattingNpmChallenge
 -
   name: 'Typosquatting Tier 2'
   category: 'Vulnerable Components'
