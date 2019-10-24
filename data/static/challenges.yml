@@ -302,56 +302,56 @@
 #  hint: 'You do not have to pay anything to unlock this challenge! Nonetheless, donations are very much appreciated.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/sensitive-data-exposure.html#unlock-premium-challenge-to-access-exclusive-content'
 #  key: premiumPaywallChallenge
--
-  name: 'Reset Jim''s Password'
-  category: 'Broken Authentication'
-  description: 'Reset Jim''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
-  difficulty: 3
-  #difficulty: 1
-  hint: 'It''s hard for celebrities to pick a security question from a hard-coded list where the answer is not publicly exposed.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-jims-password-via-the-forgot-password-mechanism'
-  key: resetPasswordJimChallenge
--
-  name: 'Reset Bender''s Password'
-  category: 'Broken Authentication'
-  description: 'Reset Bender''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
-  difficulty: 1
-  #difficulty: 4
-  hint: 'Not as trivial as Jim''s but still not too difficult with some "Futurama" background knowledge.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-benders-password-via-the-forgot-password-mechanism'
-  key: resetPasswordBenderChallenge
--
-  name: 'Reset Morty''s Password'
-  category: 'Security Misconfiguration'
-  description: 'Reset Morty''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>his obfuscated answer</i> to his security question.'
-  difficulty: 5
-  hint: 'Find a way to bypass the rate limiting and brute force the obfuscated answer to Morty''s security question.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-misconfiguration.html#reset-mortys-password-via-the-forgot-password-mechanism'
-  key: resetPasswordMortyChallenge
--
-  name: 'Reset Bjoern''s Password Tier 2'
-  category: 'Broken Authentication'
-  description: 'Reset the password of Bjoern''s internal account via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
-  difficulty: 5
-  hint: 'Nothing a little bit of Facebook stalking couldn''t reveal. Might involve a historical twist.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-the-password-of-bjoerns-internal-account-via-the-forgot-password-mechanism'
-  key: resetPasswordBjoernChallenge
--
-  name: 'NoSQL Injection Tier 1'
-  category: 'Injection'
-  description: 'Let the server sleep for some time. (It has done more than enough hard work for you)'
-  difficulty: 4
-  hint: 'This challenge is essentially a stripped-down Denial of Service (DoS) attack.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#let-the-server-sleep-for-some-time'
-  key: noSqlCommandChallenge
--
-  name: 'NoSQL Injection Tier 2'
-  category: 'Injection'
-  description: 'Update multiple product reviews at the same time.'
-  difficulty: 4
-  hint: 'Take a close look on how the equivalent of UPDATE-statements in MongoDB work.'
-  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#update-multiple-product-reviews-at-the-same-time'
-  key: noSqlReviewsChallenge
+#-
+#  name: 'Reset Jim''s Password'
+#  category: 'Broken Authentication'
+#   description: 'Reset Jim''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+#   difficulty: 3
+#   #difficulty: 1
+#   hint: 'It''s hard for celebrities to pick a security question from a hard-coded list where the answer is not publicly exposed.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-jims-password-via-the-forgot-password-mechanism'
+#   key: resetPasswordJimChallenge
+# -
+#   name: 'Reset Bender''s Password'
+#   category: 'Broken Authentication'
+#   description: 'Reset Bender''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+#   difficulty: 1
+#   #difficulty: 4
+#   hint: 'Not as trivial as Jim''s but still not too difficult with some "Futurama" background knowledge.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-benders-password-via-the-forgot-password-mechanism'
+#   key: resetPasswordBenderChallenge
+# -
+#   name: 'Reset Morty''s Password'
+#   category: 'Security Misconfiguration'
+#   description: 'Reset Morty''s password via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>his obfuscated answer</i> to his security question.'
+#   difficulty: 5
+#   hint: 'Find a way to bypass the rate limiting and brute force the obfuscated answer to Morty''s security question.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/security-misconfiguration.html#reset-mortys-password-via-the-forgot-password-mechanism'
+#   key: resetPasswordMortyChallenge
+# -
+#   name: 'Reset Bjoern''s Password Tier 2'
+#   category: 'Broken Authentication'
+#   description: 'Reset the password of Bjoern''s internal account via the <a href="/#/forgot-password">Forgot Password</a> mechanism with <i>the original answer</i> to his security question.'
+#   difficulty: 5
+#   hint: 'Nothing a little bit of Facebook stalking couldn''t reveal. Might involve a historical twist.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/broken-authentication.html#reset-the-password-of-bjoerns-internal-account-via-the-forgot-password-mechanism'
+#   key: resetPasswordBjoernChallenge
+# -
+#   name: 'NoSQL Injection Tier 1'
+#   category: 'Injection'
+#   description: 'Let the server sleep for some time. (It has done more than enough hard work for you)'
+#   difficulty: 4
+#   hint: 'This challenge is essentially a stripped-down Denial of Service (DoS) attack.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#let-the-server-sleep-for-some-time'
+#   key: noSqlCommandChallenge
+# -
+#   name: 'NoSQL Injection Tier 2'
+#   category: 'Injection'
+#   description: 'Update multiple product reviews at the same time.'
+#   difficulty: 4
+#   hint: 'Take a close look on how the equivalent of UPDATE-statements in MongoDB work.'
+#   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#update-multiple-product-reviews-at-the-same-time'
+#   key: noSqlReviewsChallenge
 -
   name: 'NoSQL Injection Tier 3'
   category: 'Injection'
