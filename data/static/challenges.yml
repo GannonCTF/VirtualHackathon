@@ -40,15 +40,15 @@
   hint: 'Try different SQL Injection attack patterns depending whether you know the admin''s email address or not.'
 #  hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-the-administrators-user-account'
   key: loginAdminChallenge
--
-  name: 'Login Jim'
-  category: 'Injection'
-  description: 'Log in with Jim''s user account.'
-  difficulty: 1
+#-
+  #name: 'Login Jim'
+  #category: 'Injection'
+  #description: 'Log in with Jim''s user account.'
+  #difficulty: 1
   #difficulty: 3
-  hint: 'Try cracking Jim''s password hash if you harvested it already. Alternatively, if you know Jim''s email address, try SQL Injection.'
+  #hint: 'Try cracking Jim''s password hash if you harvested it already. Alternatively, if you know Jim''s email address, try SQL Injection.'
   #hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/injection.html#log-in-with-jims-user-account'
-  key: loginJimChallenge
+  #key: loginJimChallenge
 #-
 #  name: 'Login Bender'
 #  category: 'Injection'
@@ -533,15 +533,15 @@
 #   hint: 'Look for an input field where its content appears in the HTML when its form is submitted.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-reflected-xss-attack'
 #   key: localXssChallenge
--
-  name: 'XSS Tier 2'
-  category: 'XSS'
-  description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> bypassing a <i>client-side</i> security mechanism.'
+#-
+#  name: 'XSS Tier 2'
+#  category: 'XSS'
+#  description: 'Perform a <i>persisted</i> XSS attack with <code>&lt;iframe src="javascript:alert(`xss`)"&gt;</code> bypassing a <i>client-side</i> security mechanism.'
 #   difficulty: 3
-  difficulty: 1
-  hint: 'Only some input fields validate their input. Even less of these are persisted in a way where their content is shown on another screen.'
+#  difficulty: 1
+#  hint: 'Only some input fields validate their input. Even less of these are persisted in a way where their content is shown on another screen.'
 #   hintUrl: 'https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/xss.html#perform-a-persisted-xss-attack-bypassing-a-client-side-security-mechanism'
-  key: persistedXssChallengeUser
+#  key: persistedXssChallengeUser
 # -
 #   name: 'XSS Tier 3'
 #   category: 'XSS'
